@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Image Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1>Comic Image Viewer</h1>
+
+    <!-- 10 Input Forms -->
+    <form class="imageForm">
+        <label for="input1_1">Enter comic image prompt (page 1 ):</label>
+        <input type="text" id="input1_1" name="input1_1" required>
+        <label for="input1_2">Enter bubble text: </label>
+        <input type="text" id="input1_2" name="input1_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input2_1">Enter comic image prompt (page 2 ):</label>
+        <input type="text" id="input2_1" name="input2_1" required>
+        <label for="input2_2">Enter bubble text: </label>
+        <input type="text" id="input2_2" name="input2_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <!-- Repeat the form structure for 3 to 10 -->
+        <label for="input3_1">Enter comic image prompt (page 3 ):</label>
+        <input type="text" id="input3_1" name="input3_1" required>
+        <label for="input3_2">Enter bubble text: </label>
+        <input type="text" id="input3_2" name="input3_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input4_1">Enter comic image prompt (page 4 ):</label>
+        <input type="text" id="input4_1" name="input4_1" required>
+        <label for="input4_2">Enter bubble text: </label>
+        <input type="text" id="input4_2" name="input4_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input5_1">Enter comic image prompt (page 5 ):</label>
+        <input type="text" id="input5_1" name="input5_1" required>
+        <label for="input5_2">Enter bubble text: </label>
+        <input type="text" id="input5_2" name="input5_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input6_1">Enter comic image prompt (page 6 ):</label>
+        <input type="text" id="input6_1" name="input6_1" required>
+        <label for="input6_2">Enter bubble text: </label>
+        <input type="text" id="input6_2" name="input6_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input7_1">Enter comic image prompt (page 7 ):</label>
+        <input type="text" id="input7_1" name="input7_1" required>
+        <label for="input7_2">Enter bubble text: </label>
+        <input type="text" id="input7_2" name="input7_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input8_1">Enter comic image prompt (page 8 ):</label>
+        <input type="text" id="input8_1" name="input8_1" required>
+        <label for="input8_2">Enter bubble text: </label>
+        <input type="text" id="input8_2" name="input8_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input9_1">Enter comic image prompt (page 9 ):</label>
+        <input type="text" id="input9_1" name="input9_1" required>
+        <label for="input9_2">Enter bubble text: </label>
+        <input type="text" id="input9_2" name="input9_2" required>
+    </form> <hr>
+    <form class="imageForm">
+        <label for="input10_1">Enter comic image prompt (page 10) :</label>
+        <input type="text" id="input10_1" name="input10_1" required>
+        <label for="input10_2">Enter bubble text: </label>
+        <input type="text" id="input10_2" name="input10_2" required>
+    </form> <hr>
+
+   
+    <button type="button" onclick="fetchAndDisplayImages()" id="fetchButton">Fetch Images</button><br/>
+    Please wait after clicking the fetch button, the API takes 2-3 mins time to generate the pictures.
+
+    <div id="imageContainer"></div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
